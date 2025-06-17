@@ -1,0 +1,17 @@
+{
+  "name": "bcac",
+  "version": "1.0.0",
+  "description": "Backend for video streaming platform",
+  "keywords": [
+    "backend",
+    "javascript",
+    "express"
+  ],
+  "license": "ISC",
+  "author": "Ainesh Sinha",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
