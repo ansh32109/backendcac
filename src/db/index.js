@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
 
 export const connectDB = async () => {
   try {
@@ -9,7 +10,7 @@ export const connectDB = async () => {
     );
     console.log("MongoDB connected at: ", connectionInstance.connection.host);
   } catch (error) {
-    console.log("MONGODB Connection Error (src/index.js) : ", error);
+    console.log("MONGODB Connection Error (src/db/index.js) : ", error);
     process.exit(1);
   }
 };
